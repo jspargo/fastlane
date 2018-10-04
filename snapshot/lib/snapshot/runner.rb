@@ -76,7 +76,7 @@ module Snapshot
 
       params = {
         rows: FastlaneCore::PrintTable.transform_output(rows),
-        headings: ["Device"] + results.values.first.keys,
+        headings: ["Device"] + results.values.first.keys + ["Count"],
         title: "snapshot results"
       }
       puts("")
